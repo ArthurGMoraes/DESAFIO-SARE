@@ -4,13 +4,6 @@ import numpy as np
 
 ARQUIVO = "data/confinamento_gado_de_corte.xlsb"
 
-entradas = pd.read_excel(ARQUIVO, sheet_name="Entradas", engine="pyxlsb")
-mortes = pd.read_excel(ARQUIVO, sheet_name="Mortes", engine="pyxlsb")
-trat = pd.read_excel(ARQUIVO, sheet_name="Tratamentos", engine="pyxlsb")
-
-total_rebanho = len(entradas)
-
-
 # a) TAXA DE MORTALIDADE
 def taxa_mortalidade(mortes, total_rebanho):
     print("\na) TAXA DE MORTALIDADE")
