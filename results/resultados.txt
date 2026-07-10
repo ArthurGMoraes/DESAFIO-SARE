@@ -1,0 +1,127 @@
+Usando arquivo: data/confinamento_gado_de_corte.xlsb
+
+a) TAXA DE MORTALIDADE
+Total de animais no rebanho: 82777
+Total de mortes: 1298
+Taxa de Mortalidade: 1.57%
+
+b) TAXA DE MORBIDADE
+Animais unicos tratados por motivo clinico: 6609
+Taxa de Morbidade: 7.98%
+
+c) PREVALENCIA DE DOENCAS
+
+Por causa de MORTE (motivo_morte) - 10 mais frequentes
+                         count
+motivo_morte                  
+PNEUMONIA                  285
+PLEUROPNEUMONIA            241
+REFUGO DE COCHO            189
+INFORMACAO INDISPONIVEL    135
+AUTOLISE                   123
+MORTES FEVEREIRO            41
+CLOSTRIDIOSES               26
+TRAUMATISMO/FRATURA         25
+TRAUMA DE TRANSPORTE        25
+MORTES MARCO                21
+
+Por motivo de TRATAMENTO (clinico) - 10 mais frequentes
+                           count
+motivo                          
+REFUGO DE COCHO            14706
+PNEUMONIA                   3851
+CASCO                        435
+PNEUMONIA (GRAVE)            342
+TRISTEZA PARASITÁRIA         226
+CASCO (LEVE)                 160
+LESÃO                        118
+LESAO                         84
+POLIOENCEFALO                 62
+REFUGO + PNEUMONIA (LEVE)     48
+
+d) FATORES DE RISCO PARA MORTES E TRATAMENTOS
+
+Mortalidade por Raca (minimo 30 entradas)
+                Entradas  Mortes  Taxa Mortalidade (%)
+ABERDEEN ANGUS       252       8                  3.17
+NELORE             71549    1160                  1.62
+COMPOSTO            6218      84                  1.35
+CRUZADO             4758      46                  0.97
+
+Mortalidade por Categoria Animal (minimo 30 entradas)
+                Entradas  Mortes  Taxa Mortalidade (%)
+VACA MULTIPARA        42       2                  4.76
+BEZERRA             1379      32                  2.32
+BEZERRO             1242      28                  2.25
+GARROTE               97       2                  2.06
+NOVILHA            51012     985                  1.93
+BOI                26729     234                  0.88
+VACA PRIMIPARA      2276      15                  0.66
+
+Mortalidade por Faixa de Peso de Entrada
+            Entradas  Mortes  Taxa Mortalidade (%)
+faixa_peso                                        
+<150             968      58                  5.99
+150-200         1127      14                  1.24
+200-250         4570     160                  3.50
+250-300        22502     442                  1.96
+300-350        25388     338                  1.33
+350-400        15307     181                  1.18
+400+           12915     105                  0.81
+
+Dias em confinamento ate a morte (qtd_diarias)
+       qtd_diarias
+count       1298.0
+mean          69.0
+std           79.3
+min            1.0
+25%           24.0
+50%           47.0
+75%           97.8
+max         1593.0
+
+Motivos de tratamento com maior % de evolucao para obito (minimo 10 casos)
+                      qtd_tratamentos  evoluiu_morte
+motivo                                              
+UTERINO                            14          64.29
+LESÃO                             118          25.42
+POLIOENCEFALO                      62          22.58
+TRISTEZA PARASITÁRIA              226          15.93
+DIARRÉIA                           35          14.29
+PNEUMONIA                        3851          10.00
+REFUGO DE COCHO                 14706           7.54
+CASCO                             435           7.13
+PNEUMONIA (GRAVE)                 342           1.75
+CASCO (GRAVE)                      14           0.00
+
+f) FORNECEDOR DE MAIOR RISCO SANITARIO
+(considerando apenas fornecedores com >= 30 animais entregues)
+
+Top 10 por Taxa de Mortalidade
+     Total Entradas  Mortes  Animais Tratados  Taxa Mortalidade (%)  Taxa Morbidade (%)
+430            35.0     4.0              11.0                 11.43               31.43
+237            45.0     4.0               8.0                  8.89               17.78
+82            120.0    10.0               7.0                  8.33                5.83
+88             50.0     4.0               2.0                  8.00                4.00
+225            39.0     3.0               3.0                  7.69                7.69
+3              71.0     5.0               5.0                  7.04                7.04
+97            149.0    10.0              25.0                  6.71               16.78
+94             60.0     4.0               1.0                  6.67                1.67
+229            47.0     3.0               3.0                  6.38                6.38
+273           373.0    22.0              20.0                  5.90                5.36
+
+Top 10 por Taxa de Morbidade
+     Total Entradas  Mortes  Animais Tratados  Taxa Mortalidade (%)  Taxa Morbidade (%)
+63            211.0     6.0             151.0                  2.84               71.56
+58             75.0     1.0              29.0                  1.33               38.67
+131           499.0     3.0             192.0                  0.60               38.48
+46            112.0     6.0              41.0                  5.36               36.61
+416           146.0     2.0              52.0                  1.37               35.62
+215           192.0     1.0              62.0                  0.52               32.29
+430            35.0     4.0              11.0                 11.43               31.43
+305            35.0     1.0              11.0                  2.86               31.43
+31             70.0     0.0              21.0                  0.00               30.00
+57             74.0     3.0              22.0                  4.05               29.73
+
+Maior risco por MORTALIDADE: fornecedor '430' (11.43%)
+Maior risco por MORBIDADE: fornecedor '63' (71.56%)
